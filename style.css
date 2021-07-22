@@ -1,0 +1,83 @@
+body {
+    background-image: url(stickyNotes.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+h1 {
+    color: red;
+    font-family: sans-serif;
+}
+
+#form-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-direction: column;
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+
+.form-item {
+    margin-right: 20px;
+    display: center;
+    font-size: x-large;
+    color: black;
+    flex-direction: row;
+}
+
+label.primary {
+    display: block;
+    margin: 20px 0;
+    font-family: sans-serif;
+    color: black;
+}
+label{
+    color: black;
+}
+
+label::after {
+    content: ":";
+}
+
+button, input[type="submit"] {
+    color: purple;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#task-list {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    flex-direction: row;
+}
+
+.todo {
+    margin: 12px 12px;
+    padding: 12px 12px;
+    border: 2px solid grey;
+    border-radius: 5%;
+    background: lightgreen;
+    color: white;
+    flex-direction: row;
+    font-weight: bold;
+}
+
+.important{
+    background-color:#f50303;
+}
+.medium{
+    background-color:#f7e50c;
+}
+.low{
+    background-color:#30f70c;
+}
+
