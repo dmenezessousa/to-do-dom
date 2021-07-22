@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY TO-DO LIST !</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="new-item-form">
+        <div id="form-wrapper">
+            <div class="form-item">
+                <label for="task" class="primary">Task</label>
+                <input type="text" id="task" required/>
+            </div>
+            <div class="form-item">
+                <label for="desc" class="primary">Description</label>
+                <input type="text" id="desc"/>
+            </div>
+            <div class="form-item">
+                <label for="priority" class="primary">Priority</label>
+                <label for="Important">Important</label>
+                <input type="radio" name="priority" id="Imp" value="important"/>
+                <label for="Medium">Medium</label>
+                <input type="radio" name="priority" id="Med" value="medium"/>
+                <label for="low">low</label>
+                <input type="radio" name="priority" id="low" value="low"/>
+            </div>
+        </div>
+        <button id="save">ADD</button>
+    </form>
+    <button id="remove-all">Remove All</button>
+    <h1> 😩Stuff I gotta do!😩 </h1>
+    <div id="task-list"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="main.js"></script>
+    <!-- <script src="test.js"></script> -->
+</body>
+</html>
